@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat,Verdana;
+}
+
+p{
+    color: rgb(55, 57, 57) ;;
+}
+
+.nav-link{
+    color: rgb(30, 206, 191);
+}
+
+.navbar-nav .nav-link.active.nav-link.active {
+    color: rgb(26, 150, 140);
+}
+
+
+.logo {
+    width: 40px;
+    height: 25px;
+}
+
+.navbar-nav .navbar-brand.a{
+    color: rgb(147, 147, 147);
+}
+
+.sidebar {
+    color:rgb(55, 57, 57) ;
+    background: linear-gradient( 270deg, #236471 0%, #ffffff 100%);
+}   
+ 
+.card {
+    background:linear-gradient(0deg, #236471 0%, #ffffff 100%);
+    color: rgb(55, 57, 57) ;
+}   
+
+.card a {
+    text-decoration: none;
+    color: rgb(55, 57, 57) ;
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(55, 57, 57);
+    margin:auto auto;
+}
+
+footer,
+.btn-outline-primary {
+    background:linear-gradient(270deg, #236471 0%, #ffffff 100%); 
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
